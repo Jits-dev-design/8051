@@ -1,0 +1,6 @@
+;To divide 5 by 2 and perform AND operation between the Quotient and the Remainder then show the result 
+MOV A, #38H; To intialize 16x2 LCD
+MOV A, #05H
+MOV B, #02H
+DIV AB
+ANL A,B

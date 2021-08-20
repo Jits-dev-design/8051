@@ -1,0 +1,9 @@
+;Q2. Write an assembly language program using 8051 microcontroller to add two 8 bit numbers and show the result in 7 segment display.
+MOV A,#03H
+ADD A,#02H
+ 
+HERE:SETB P0.7
+CLR P3.3
+CLR P3.4
+MOV P1,#92H
+SJMP HERE

@@ -1,0 +1,6 @@
+; Q1. Write an assembly language program using 8051 microcontroller to multiply two 8 bit numbers and show the result in a pattern of 8 LEDs. 
+MOV A,#03H
+MOV B,#02H
+MUL AB
+MOV A, #06H
+MOV P1,A

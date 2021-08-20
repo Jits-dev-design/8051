@@ -1,0 +1,15 @@
+;To ADD two 8-bit numbers and display on LED
+MOV A,#06H
+ADD A,#05H
+ 
+HERE:SETB P0.7
+CLR P3.3
+CLR P3.4
+MOV P1,#0f9H
+
+SETB P0.7
+SETB P3.3
+CLR P3.4
+MOV P1,#0f9H
+SJMP HERE
+
